@@ -71,7 +71,7 @@ by [PeterTheSparrow](https://github.com/PeterTheSparrow)
 
 #### > 1.1.1  类
 
-![](\resource/classfig.png)
+![](./resource/classfig.png)
 
 属性或者方法名称前加的加号和减号是什么意思呢？它们表示了这个属性或方法的可见性，UML类图中表示可见性的符号有三种：
 
@@ -81,30 +81,30 @@ by [PeterTheSparrow](https://github.com/PeterTheSparrow)
 
 #### >1.1.2  类和类的关系
 
-![](resource/relationclass.png)
+![](./resource/relationclass.png)
 
 ##### >1.1.2.1 泛化（Generalization）/ 继承（Inheritance）
 
-![](resource/gernerlization.png)
+![](./resource/gernerlization.png)
 
 ##### >1.1.2.2 关联关系（Association）
 
 关联关系中包括两种特殊的关联关系：
 聚合（Aggregation）和组合（Composition）
 
-![](resource/associate.png)
+![](./resource/associate.png)
 
 ##### >1.1.2.3 聚合（Aggregation）
 
-![](resource/juhe.png)
+![](./resource/juhe.png)
 
 ##### >1.1.2.4 组合（Composition）
 
-![](resource/zuhe.png)
+![](./resource/zuhe.png)
 
 ##### >1.1.2.5 依赖（Dependency）
 
-![](resource/dependency.png)
+![](./resource/dependency.png)
 
 
 ### >1.2 时序图
@@ -122,34 +122,34 @@ by [PeterTheSparrow](https://github.com/PeterTheSparrow)
 - 链接[1](https://blog.csdn.net/cold___play/article/details/100824261)
 
 #### >1.4.1 用例图概述
-![](resource/usecase.png)
+![](./resource/usecase.png)
 
 #### >1.4.2 识别actor和use case，画use-case图
 
-![](\resource/QQ截图20230615194448.png)
+![](./resource/QQ截图20230615194448.png)
 
 - Actor：参与者，可以是人，也可以是其他系统。例如：学生选课，学生就是Actor；我选课系统和jacount进行交互，甲亢就是Actor。
 - Use Case：用例。学生选课，选课这件事情就是use case。
 
-![](resource/QQ截图20230615194925.png)
+![](./resource/QQ截图20230615194925.png)
 
-![](resource/QQ截图20230615194952.png)
+![](./resource/QQ截图20230615194952.png)
 
 - 上面一张图的第三条，传感器（Actor）要告诉系统窗户是不是开着的；所以窗户开关信息告知就是一个use case。
 - 第四条，警报器（actor）需要系统告诉他火灾是否发生了，所以火灾信息告知就是一个use case。
 
-![](resource/QQ截图20230615195227.png)
+![](./resource/QQ截图20230615195227.png)
 
 - 不能太小，比如增删改查，可以统一成为“信息管理”。
 - use case**取名一定是一个动宾结构**，使得容易理解。
 
-![](resource/QQ截图20230615195516.png)
+![](./resource/QQ截图20230615195516.png)
 - 画箭头，谁发起的通信
 
 上面这些都掌握以后，我们来看：
 - 总的一个例子：
 
-![](resource/QQ截图20230615195750.png)
+![](./resource/QQ截图20230615195750.png)
 
 #### >1.4.3 编写use-case spec.
 
@@ -169,11 +169,11 @@ Use Case Specification（用例规约）是一种软件需求规格说明书，�
 
 总之，Use Case Specification是一种重要的软件需求规格说明书，能够帮助开发团队和用户更好地理解系统中各个用例的执行过程和预期结果，从而提高软件开发的效率和质量。
 
-![](resource/QQ截图20230615200103.png)
+![](./resource/QQ截图20230615200103.png)
 
 - 最重要的还是**简要描述+事件流**
 
-![](resource/QQ截图20230615200313.png)
+![](./resource/QQ截图20230615200313.png)
 
 - 基本流：比如选课成功；
 - 备选流：选课，这门课被抢完了（偶尔发生的情况，概率很小）；系统崩了……
@@ -181,10 +181,10 @@ Use Case Specification（用例规约）是一种软件需求规格说明书，�
 **新的概念：Scenario 场景**
 Scenario是user-case的实例
 
-![](resource/QQ截图20230615200613.png)
+![](./resource/QQ截图20230615200613.png)
 
-![](resource/QQ截图20230615200801.png)
-![](resource/QQ截图20230615200823.png)
+![](./resource/QQ截图20230615200801.png)
+![](./resource/QQ截图20230615200823.png)
 
 
 
@@ -195,31 +195,31 @@ Scenario是user-case的实例
 - use case和use case之间的关系
 （因为我们之前研究的都是actor和use case之间的关系）
 
-![](resource/QQ截图20230615201151.png)
+![](./resource/QQ截图20230615201151.png)
 
-![](resource/QQ截图20230615201230.png)
+![](./resource/QQ截图20230615201230.png)
 
-![](resource/QQ截图20230615201319.png)
+![](./resource/QQ截图20230615201319.png)
 
 这张扭得和方便面一样的图是什么意思呢：
 - 执行base case的时候，会执行include的use case（执行完了再回来）
-![](resource/QQ截图20230615201545.png)
+![](./resource/QQ截图20230615201545.png)
 
-![](resource/QQ截图20230615201438.png)
+![](./resource/QQ截图20230615201438.png)
 
 - 例如：炒股软件中，看报价单，可能会去看一下新闻；又可能看看专家的预测。**include是一定去做，extend是可能去做**。
-![](resource/QQ截图20230615202146.png)
+![](./resource/QQ截图20230615202146.png)
 
 
-![](resource/QQ截图20230615194448.png)
+![](./resource/QQ截图20230615194448.png)
 
-![](resource/QQ截图20230615202918.png)
+![](./resource/QQ截图20230615202918.png)
 
-![](resource/QQ截图20230615202954.png)
+![](./resource/QQ截图20230615202954.png)
 
-![](resource/QQ截图20230615203021.png)
+![](./resource/QQ截图20230615203021.png)
 
-![](resource/QQ截图20230615203038.png)
+![](./resource/QQ截图20230615203038.png)
 
 
 
@@ -237,30 +237,30 @@ Scenario是user-case的实例
 
 下面内容来自沈备军老师授课ppt。
 
-![](resource/liu.png)
-![](resource/1.png)
-![](resource/2.png)
-![](resource/3.png)
-![](resource/4.png)
-![](resource/5.png)
-![](resource/6.png)
+![](./resource/liu.png)
+![](./resource/1.png)
+![](./resource/2.png)
+![](./resource/3.png)
+![](./resource/4.png)
+![](./resource/5.png)
+![](./resource/6.png)
 
 #### >1.6.2 黑盒测试
 
 下面内容来自沈备军老师授课ppt。
 
-![](resource/black1.png)
-![](resource/black-1.png)
+![](./resource/black1.png)
+![](./resource/black-1.png)
 
-![](resource/b1.png)
-![](resource/b1-1.png)
-![](resource/b1-2.png)
-![](resource/b2.png)
-![](resource/b3-1.png)
-![](resource/b3-2.png)
-![](resource/b3-1.png)
-![](resource/b3-4.png)
-![](resource/b4.png)
+![](./resource/b1.png)
+![](./resource/b1-1.png)
+![](./resource/b1-2.png)
+![](./resource/b2.png)
+![](./resource/b3-1.png)
+![](./resource/b3-2.png)
+![](./resource/b3-1.png)
+![](./resource/b3-4.png)
+![](./resource/b4.png)
 
 > **课堂练习**
 > 请针对以下软件采用黑盒测试方法设计测试用例：
@@ -307,7 +307,7 @@ Scenario是user-case的实例
 
 #### >2.1.1 黑盒测试1
 
-![](resource/blackbox.png)
+![](./resource/blackbox.png)
 
 事件流覆盖（Event Flow Coverage）是一种基于黑盒测试的测试方法，用于检查系统在不同输入条件下的行为是否符合预期。它通过描述各种可能的输入事件及其相应的响应事件之间的关系，来确定测试用例的设计和执行。
 
@@ -331,7 +331,7 @@ question：需要几个测试用例？
 
 #### >2.1.2 黑盒测试2
 
-![](resource/judgingtable.png)
+![](./resource/judgingtable.png)
 
 
 这里的关键是条件判断（条件组合）：
@@ -341,15 +341,15 @@ question：需要几个测试用例？
 
 总而言之，输入如果有条件组合，就要用判定表来覆盖所有情况。
 
-![](resource/ans.png)
+![](./resource/ans.png)
 
 #### >2.1.3 概念题
 
-![](resource/QQ截图20230615213316.png)
+![](./resource/QQ截图20230615213316.png)
 
 #### >2.1.4 软件设计过程
 
-![](resource/design.png)
+![](./resource/design.png)
 
 
 进度风险如何解决？（不能外包）
@@ -358,7 +358,7 @@ question：需要几个测试用例？
 
 - 每个迭代都对某个风险进行缓解
 
-![](resource/ans-big.png)
+![](./resource/ans-big.png)
 
 **--------以下为期中考试之前的部分--------**
 **面向对象分析与设计习题课**
@@ -370,7 +370,7 @@ question：需要几个测试用例？
 
 #### >2.1.5 用例建模
 
-![](resource/which.png)
+![](./resource/which.png)
 
 答案：B
 
@@ -379,16 +379,16 @@ extend是有的时候做，有的时候不做，显然是不对的。
 
 **【用例是能卖的价值】**
 
-![](resource/right.png)
+![](./resource/right.png)
 
 对还是不对？好还是不好？
 
 actor肯定是对的。
 问题在于粒度太细了，增删改查经常是一起做的。经常一起做的事情放在一起。include常常是几个use-case的共性拿出来，千万别做功能分解。
 
-![](resource/haha.png)
+![](./resource/haha.png)
 
-![](resource/eason.png)
+![](./resource/eason.png)
 
 哪种方案更好？
 
@@ -396,26 +396,26 @@ actor肯定是对的。
 
 最好的还是C。因为这三件事情不是一起做的。因为这三件事情不是同步的，因此分三件事情。
 
-![](resource/be.png)
+![](./resource/be.png)
 
-![](resource/gaga.png)
+![](./resource/gaga.png)
 
 因为这仨人想法不一样，因此界面要做不一样的……
 
-![](resource/doc.png)
+![](./resource/doc.png)
 
 1. 问诊extend开处方
 2. dbms就是你要做的系统，不是actor（不算外部系统）
 3. 问诊要写清楚，“记录问诊信息”
 
-![](resource/deng.png)
-![](resource/lidu.png)
+![](./resource/deng.png)
+![](./resource/lidu.png)
 减钱的粒度太小了。这只是一个比较小的步骤而已。
 
 #### >2.1.6 状态图
 
-![](resource/zhuangt.png)
-![](resource/zhu.png)
+![](./resource/zhuangt.png)
+![](./resource/zhu.png)
 
 #### >2.1.7 设计模式
 
